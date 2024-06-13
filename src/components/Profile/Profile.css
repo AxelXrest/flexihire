@@ -1,0 +1,257 @@
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: azure;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+  /* New styles for job-progress section */
+  .job-progress {
+    width: 80%;
+    min-width: 300px; /* Adjust this value based on your design preferences */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .job-progress h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .job-progress-numbers {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .job-progress p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .job-progress p span {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+.profile-pic,
+.profile-initial {
+  width: 150px;
+  height: 150px;  
+  box-shadow: 0px 0px 20px 10px rgba(0, 255, 255, 0.719);
+  border-radius: 50%;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-pic-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.profile-pic {
+  object-fit: cover;
+}
+
+.profile-initial {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #555;
+}
+
+.profile-initial:hover {
+  background-color: #ccc;
+}
+
+.profile-name {
+  position: absolute;
+  color: #000000;
+  font-size: 24px;
+  height: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  top: 17rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.edit-icon-container {
+  cursor: pointer;
+  margin-right: 0.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .user-container {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile {
+    margin-top: 40px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5px;
+  }
+
+  .profile-name {
+    font-size: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.profile-pic-container {
+  position: relative;
+}
+
+#profile-pic-input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.profile-pic-container:hover .profile-pic {
+  opacity: 0.8;
+}
+
+.camera-icon {
+  font-size: 3rem;
+}
+
+.profile-initial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  background-color: #333;
+  color: #fff;
+}
+
+.camera-icon-container {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  margin-top: 3.8rem;
+  margin-left: 3.8rem;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.zoom-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+
+.camera-icon-container:hover {
+  background-color: #818181;
+}
+
+.edit-icon-container {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.edit-icon-container:hover {
+  color: #7be600; /* Change color on hover */
+}
+
+@media (max-width: 576px) {
+
+  .profile-pic,
+  .profile-initial {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 16px;
+    margin-top: -50px;
+  }
+
+  .camera-icon-container {
+    top: 50%;
+  }
+
+  .zoom-overlay img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .camera-icon-container {
+    position: absolute;
+    bottom: 1rem;
+    left: -2rem;
+    transform: translateY(20%);
+  }
+
+  .camera-icon-container:hover {
+    background-color: transparent;
+  }
+
+}
+
+.personal{
+  margin: 5rem;
+}
+
+.personal p{
+  margin: -5rem;
+  margin-left: -5rem;
+}

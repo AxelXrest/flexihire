@@ -1,0 +1,203 @@
+.retrieve-posts-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-left: 5%;
+  width: 90%;
+  border-radius: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  gap: 1rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Add bottom border to the active section title */
+.section-title.active {
+  border-bottom: 4px solid #51ff00;
+  font-weight: 600;
+  font-size: large;
+  padding-bottom: 5px;
+}
+
+.job-post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -2.5rem;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  list-style-type: none;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.job-description {
+  font-size: 16px;
+  color: #333;
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+  text-align: left;
+  display: block;
+}
+
+.job-description pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+
+.job-details {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.exp,
+.deadline {
+  width: 100%;
+  flex-basis: 35%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.workinghrs,
+.salary {
+  flex-basis: 35%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.job-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.pendingApplicants {
+  padding: 1rem;
+  text-align: right;
+}
+
+.pendingApplicants .applicantHead {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.finalApproval {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 11.5rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.pendingApplicants ul li p a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.feedback-message {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.feedback-message.accept {
+  background-color: #4caf50;
+  /* Green background for acceptance */
+  color: white;
+}
+
+.feedback-message.reject {
+  background-color: #ff5252;
+  /* Red background for rejection */
+  color: white;
+}
+
+.feedback-message.fade-out {
+  opacity: 0;
+}
+
+button {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb8;
+  letter-spacing: 0.5px;
+}
+
+.handleButton {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.job-post+.job-post {
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .job-post {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .exp,
+  .deadline,
+  .workinghrs,
+  .salary {
+    flex-basis: 35%;
+  }
+
+  .job-description {
+    font-size: 0.8rem;
+  }
+
+  .job-details {
+    font-size: 12px;
+  }
+
+  .job-actions button {
+    padding: 6px 12px;
+  }
+
+  .postDetails {
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,260 @@
+.footerBody {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+footer {
+    background-color: #000000ff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem;
+}
+
+.footercontainer {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    min-width: 250px;
+    color: #f2f2f2f2;
+    font-family: poppins;
+    padding: 0 2rem;
+}
+
+.col .logo {
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.col h4 {
+    color: #ff014fff;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.col h4::after {
+    content: '';
+    height: 3px;
+    width: 0px;
+    background-color: #ff014fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.col h4:hover::after {
+    width: 30px
+}
+
+.col .social a i {
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+    padding: 4px;
+    transition: 0.3s ease;
+}
+
+.col .social a i:hover {
+    transform: scale(1.5);
+    filter: grayscale(1);
+}
+
+.col .links a {
+    display: block;
+    text-decoration: none;
+    color: #f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.col .links a::before {
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.col .links a:hover::before {
+    opacity: 1;
+}
+
+.col .links a:hover {
+    transform: translateX(-8px);
+}
+
+.col .support-details {
+    display: inline-flex;
+    padding: 0.2rem;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+
+.col .support-details i {
+    margin-right: 15px;
+}
+
+.support-details p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+}
+
+.support-details p:hover {
+    color: rgb(201, 201, 201);
+    cursor: pointer;
+}
+
+.copyright .row{
+    margin-left: 20%;
+}
+
+.copyright .row .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.row .form input {
+    background-color: #1a1c20ff;
+    border: 0;
+    outline: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form button {
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ff014fff;
+
+}
+
+.silhouette {
+    margin-bottom: -1rem;
+    width: 100%;
+}
+
+.social .twitter-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-top: -0.1rem;
+    transform: rotate(0deg);
+    filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(330deg) saturate(800%) contrast(1) invert(100%);
+    margin-right: 0;
+    margin-left: 0;
+    padding: 4px;
+}
+
+.social .twitter-icon:hover {
+    transform: scale(1.5);
+}
+
+.social .twitter-icon::before {
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.social .twitter-icon:hover::before {
+    opacity: 1;
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    #followUs {
+        width: 100%;
+        text-align: center;
+    }
+
+    .copyright .row{
+        margin-left: 0;
+    }
+}
+
+@media(max-width:768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    div#followUs {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#followUs {
+    padding: 1.5rem;
+}
+
+footer .copyright {
+    padding: 25px 0;
+    margin-top: 20px;
+    font-size: 15px;
+    color: azure;
+    border-top: 1px solid #ff014fff;
+}
+
+footer .copyright a {
+    color: #5000e6;
+}
+
+footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #ff014fff;
+}
+
+footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
