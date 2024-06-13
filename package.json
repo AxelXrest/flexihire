@@ -1,27 +1,40 @@
 {
   "name": "flexihire",
-  "homepage": "https://axelxrest.github.io/flexihire",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.2",
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@amcharts/amcharts3-react": "^3.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@google/generative-ai": "^0.12.0",
-    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.3.3",
-    "firebase": "^10.12.2",
-    "gh-pages": "^6.1.1",
+    "@types/gsap": "^3.0.0",
+    "amcharts3": "^3.21.15",
+    "bootstrap": "^5.3.0-alpha3",
+    "bootstrap-icons": "^1.10.5",
+    "cors": "^2.8.5",
+    "d3": "^7.8.5",
+    "express": "^4.18.2",
+    "firebase": "^9.19.1",
+    "firebase-admin": "^11.11.1",
+    "jquery": "^3.6.4",
+    "postcss-nested": "^6.0.1",
     "react": "^18.3.1",
-    "react-bootstrap": "^2.10.2",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.2.1",
+    "react-firebase-hooks": "^5.1.1",
+    "react-icons": "^4.8.0",
     "react-lazyload": "^3.2.1",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "5.0.1",
-    "sass": "^1.77.5",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^6.0.8",
+    "swiper": "^10.3.1",
+    "three": "^0.157.0",
+    "three-orbitcontrols": "^2.110.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -49,5 +62,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3"
   }
 }

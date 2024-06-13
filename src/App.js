@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { auth, db } from './config/firebase';
-import { 
-    getDoc,
-    doc,
+import {
+  getDoc,
+  doc,
 } from 'firebase/firestore';
 import Navbar from './components/Navbar/Navbar';
 import PageFooter from './components/PageFooter/PageFooter';
@@ -72,43 +72,27 @@ function App() {
   }
 
   return (
-   // <div className="App">
-     // <header className="App-header">
-       // <img src={logo} className="App-logo" alt="logo" />
-        //<p>
-         // Edit <code>src/App.js</code> and save to reload.
-       // </p>
-       // <a
-         // className="App-link"
-         // href="https://reactjs.org"
-          // target="_blank"
-          // rel="noopener noreferrer"
-        // >
-          // Learn React
-        // </a>
-      // </header>
-    // </div>
     <>
-    <AdminContext.Provider value={isAdmin}>
-      <Router>
-        {isRevoked && (
-          <>
-            {console.log('Redirecting to /revoked')}
-            <Revoked />
-          </>
-        )}
-        {!isAdmin && !isRevoked && (
-          <>
-            <Navbar />
-            <AppRoutes userName={userName} />
-            <PageFooter />
-            <Message />
-          </>
-        )}
-        {isAdmin && <Admin />}
-      </Router>
-    </AdminContext.Provider>
-  </>
+      <AdminContext.Provider value={isAdmin}>
+        <Router>
+          {isRevoked && (
+            <>
+              {console.log('Redirecting to /revoked')}
+              <Revoked />
+            </>
+          )}
+          {!isAdmin && !isRevoked && (
+            <>
+              <Navbar />
+              <AppRoutes userName={userName} />
+              <PageFooter />
+              <Message />
+            </>
+          )}
+          {isAdmin && <Admin />}
+        </Router>
+      </AdminContext.Provider>
+    </>
   );
 }
 

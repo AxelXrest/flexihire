@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body{
+  /* background: url(http://salehriaz.com/404Page/img/bg_purple.png); */
+  background-color: rgb(194, 194, 194);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,13 +37,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 body {
-    overflow-y: scroll;
-    height: 100%;
-    background-color: rgb(194, 194, 194);
+  overflow-y: scroll;
+  height: 100%;
 }

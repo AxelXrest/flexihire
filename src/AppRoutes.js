@@ -19,7 +19,7 @@ import Payment from './components/Payment/Payment';
 const AppRoutes = ({ userName }) => {
   return (
     <Routes>
-      <Route path="/flexihire" element={<Home name={userName} />} />
+      <Route path="/" element={<Home name={userName} />} />
       <Route path="/ai" element={<AIChat />} />
       <Route path="/contactUs" element={<ContactForm />} />
       <Route path="/mailReceived" element={<MailReceived />} />

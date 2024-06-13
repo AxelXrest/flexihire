@@ -172,7 +172,7 @@ function Home(props) {
               </h3>
               <img
                 className="productBuoy"
-                src={process.env.PUBLIC_URL + '/Images/svg/productBuoy.svg'}
+                src="../../../Images/svg/productBuoy.svg"
                 alt="buoy"
               />
             </section>
