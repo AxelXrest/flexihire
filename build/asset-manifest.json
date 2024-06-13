@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/flexihire/static/css/main.e7773dff.css",
+    "main.js": "/flexihire/static/js/main.a3160c86.js",
+    "static/js/453.9f3ef417.chunk.js": "/flexihire/static/js/453.9f3ef417.chunk.js",
+    "static/media/dashboard.jpg": "/flexihire/static/media/dashboard.82ace7fbdaaa3fae17d8.jpg",
+    "static/media/side.jpg": "/flexihire/static/media/side.585eb13a2cff8f2b39af.jpg",
+    "static/media/payment1.png": "/flexihire/static/media/payment1.21ac2bff83613ae8395c.png",
+    "static/media/8.jpg": "/flexihire/static/media/8.bbf8f3b1da3112c1af97.jpg",
+    "static/media/heroimg.jpg": "/flexihire/static/media/heroimg.40760812778e269dcb11.jpg",
+    "static/media/how.jpg": "/flexihire/static/media/how.dafce790deeafced96ca.jpg",
+    "static/media/custom.woff": "/flexihire/static/media/custom.0295b4398306c2fe91bf.woff",
+    "static/media/side2.jpg": "/flexihire/static/media/side2.98629a6506831119fe60.jpg",
+    "static/media/silhouette.png": "/flexihire/static/media/silhouette.07b325c7d6a06c100125.png",
+    "static/media/payment.png": "/flexihire/static/media/payment.7ca664a8f9dd361a1872.png",
+    "static/media/mid.jpg": "/flexihire/static/media/mid.6b00c24e55618608357b.jpg",
+    "static/media/transparent_bg.png": "/flexihire/static/media/transparent_bg.f85711a089a253caf7e5.png",
+    "index.html": "/flexihire/index.html",
+    "static/media/x-twitter.svg": "/flexihire/static/media/x-twitter.2ad7b7a34e57289f7369189dd4dacea5.svg",
+    "main.e7773dff.css.map": "/flexihire/static/css/main.e7773dff.css.map",
+    "main.a3160c86.js.map": "/flexihire/static/js/main.a3160c86.js.map",
+    "453.9f3ef417.chunk.js.map": "/flexihire/static/js/453.9f3ef417.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7773dff.css",
+    "static/js/main.a3160c86.js"
+  ]
+}
