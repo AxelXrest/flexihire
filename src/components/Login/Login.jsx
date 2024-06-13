@@ -24,6 +24,17 @@ function Login() {
       });
   };
 
+  const handleForgotPassword = () => {
+    const auth = getAuth();
+    sendPasswordResetEmail(auth, email)
+      .then(() => {
+        alert("Password reset email sent. Please check your email.");
+      })
+      .catch((error) => {
+        console.error("Error sending password reset email: ", error.message);
+      });
+  };
+
   return (
     <div className="login-card" id="card">
       <div className="center-wrap">
@@ -62,6 +73,7 @@ function Login() {
               href="#0"
               className="link-forget text-center"
               id="color-gradient"
+              onClick={handleForgotPassword}
             >
               Forgot your password?
             </a>
@@ -84,17 +96,17 @@ function Login() {
         </p>
         <ul className="social-links">
           <li>
-            <a href="#" id="color-gradient">
+            <a href="#" id="color-gradient" onClick={signInWithGoogle}>
               <i className="fab fa-google"></i>
             </a>
           </li>
           <li>
-            <a href="#" id="color-gradient">
+            <a href="#" id="color-gradient" onClick={signInWithFacebook}>
               <i className="fab fa-facebook-f"></i>
             </a>
           </li>
           <li>
-            <a href="#" id="color-gradient">
+            <a href="#" id="color-gradient" onClick={signInWithTwitter}>
               <i className="fab fa-twitter"></i>
             </a>
           </li>
