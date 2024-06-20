@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import { ReactComponent as TwitterIcon } from "../images/x-twitter.svg";
 import LazyLoad from "react-lazyload";
 
 function About() {
+
+  const links = {
+    facebook: ["https://www.facebook.com/praful.shrestha.017"],
+    instagram: ["https://www.instagram.com/ajay.nemkul/", "https://www.instagram.com/prafulstha.17/"],
+    twitter: ["https://x.com/AxelXrest"]
+  };
+
+  // Function to set random href
+  const setRandomHref = (platform) => {
+    const elements = document.querySelectorAll(`.${platform}`);
+    elements.forEach(element => {
+      const randomLink = links[platform][Math.floor(Math.random() * links[platform].length)];
+      element.href = randomLink;
+    });
+  };
+
+  // Use useEffect to set random hrefs after component mounts
+  useEffect(() => {
+    setRandomHref('facebook');
+    setRandomHref('instagram');
+    setRandomHref('twitter');
+  }, []);
+
   return (
     <>
       <span className="container section-1">
@@ -30,7 +53,6 @@ function About() {
           </LazyLoad>
         </div>
       </span>
-
       <section className="bottomDescription">
         <div className="aboutDescription">
           <div className="row">
@@ -41,28 +63,17 @@ function About() {
                 <div className="box2"></div>
                 <div className="box3"></div>
                 <div className="social1">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100092199707911"
-                    class="social-icon"
-                    target="_blank"
-                  >
+                  <a className="facebook" target="_blank">
                     <i className="fa-brands fa-facebook-f"></i>
                   </a>
                 </div>
                 <div className="social2">
-                  <a
-                    href="https://www.instagram.com/hireflexi/"
-                    target="_blank"
-                  >
+                <a className="instagram" target="_blank">
                     <i className="fa-brands fa-instagram"></i>
                   </a>
                 </div>
                 <div className="social3">
-                  <a
-                    href="https://twitter.com/HireFlexi"
-                    class="social-icon"
-                    target="_blank"
-                  >
+                <a className="twitter" target="_blank">
                     <TwitterIcon className="twitter-icon" />
                   </a>
                 </div>

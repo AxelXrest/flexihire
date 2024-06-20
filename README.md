@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://img.shields.io/github/stars/AxelXrest/flexihire.github.io?color=%231a1b26&label=STARGAZERS&labelColor=%231a1b26&style=for-the-badge"/>&nbsp;&nbsp;
-  <img src="https://img.shields.io/github/forks/AxelXrest/flexihire.github.io?color=%231a1b26&label=FORKS&labelColor=%231a1b26&style=for-the-badge"/>&nbsp;&nbsp;
-  <img src="https://img.shields.io/github/issues/AxelXrest/flexihire.github.io?color=1a1b26&labelColor=1a1b26&style=for-the-badge"/>&nbsp;&nbsp;
-  <img src="https://img.shields.io/github/license/AxelXrest/flexihire.github.io?color=1a1b26&labelColor=1a1b26&style=for-the-badge"/>
+  <img src="https://img.shields.io/github/stars/AxelXrest/flexihire?color=%231a1b26&label=STARGAZERS&labelColor=%231a1b26&style=for-the-badge"/>&nbsp;&nbsp;
+  <img src="https://img.shields.io/github/forks/AxelXrest/flexihire?color=%231a1b26&label=FORKS&labelColor=%231a1b26&style=for-the-badge"/>&nbsp;&nbsp;
+  <img src="https://img.shields.io/github/issues/AxelXrest/flexihire?color=1a1b26&labelColor=1a1b26&style=for-the-badge"/>&nbsp;&nbsp;
+  <img src="https://img.shields.io/github/license/AxelXrest/flexihire?color=1a1b26&labelColor=1a1b26&style=for-the-badge"/>
 </p>
 <h1 align="center">FlexiHire</h1>
 <p align="center">
@@ -13,9 +13,12 @@
 <h3>Welcome to a short trip for my website project and showcasing</h3>
 <a align="center"><img src="https://i.imgur.com/5v8Xc6v.gif"/></a>
 <h2>✨ Kickoff ✨</h2>
-Welcome to my GitHub repository of FlexiHire, a freelancing website! 
-This was made as a project for my second year, so there can be many mistakes. Please ignore them or you can suggest some edits if you want.
-I have used [ReactJS](https://react.dev/) for frontend and integrated it with [Firebase](https://firebase.google.com/) for data storings.<br>
+Welcome to my GitHub repository of FlexiHire, a freelancing website! This was made as a project for my second year, so there may be many mistakes. Please ignore them or suggest some edits if you want. I have used <a href="https://react.dev/">ReactJS</a> for the frontend and integrated it with <a href="https://firebase.google.com/">Firebase</a> for data storage.<br>
+
+<h4>If you are here for reference and want to <s>steal</s> use it, then please give me the credits 😃.</h4>
+
+<i>If you need any help, you can open an issue on GitHub or contact me on Discord: `mr.xrest` or `axelxrest`. I will be happy to help if I can!</i><br>
+
 <h4>If you are here for reference and want to <s>steal</s> use it, then please give me the credits 😃.</h4>
 <i>If you need any help, you can open an issue on GitHub or you can contact me on Discord: `mr.xrest` or `axelxrest`, I will be happy to help if I can!</i><br><br>
 
@@ -24,13 +27,13 @@ I have used [ReactJS](https://react.dev/) for frontend and integrated it with [F
 * The responsiveness of this website was handcrafted with love, so it might look a bit off on your devices due to my limited resources and reach.
 
 <h2>✨ Briefing ✨</h2>
-FlexiHire claims to be a notch above freelancing giants like Upwork, offering a chaotic blend of features: smart job matching, real-time communication, 
-verified profiles, and global reach. It's supposed to empower freelancers and employers alike in a new freelancing utopia. 
-Dive into FlexiHire today and explore the wild world of freelance opportunities.
 
-<h2>TechTango(Initialization)</h2>
+FlexiHire claims to be a notch above freelancing giants like Upwork, offering a chaotic blend of features: smart job matching, real-time communication, verified profiles, and global reach. It's supposed to empower freelancers and employers alike in a new freelancing utopia. Dive into FlexiHire today and explore the wild world of freelance opportunities.
+
+<h2>TechTango (Initialization)</h2>
 <h2 id="installation"> Installation:</h2>
-If you plan to use it then fork the repo and download all dependancies and run. You should have [NodeJS](https://nodejs.org/en) installed in your pc to run the web.
+
+If you plan to use it, fork the repo, download all dependencies, and run it. You should have [NodeJS](https://nodejs.org/en) installed on your PC to run the web.
 
 <details>
 <summary><b>Download Dependancies:</b></summary>
@@ -122,7 +125,7 @@ Although if the browser is not started automatically then manually enter the URL
 
 * **There are images taken from [Wallhaven](https://wallhaven.cc), [pexels](https://pexels.com), [UHD Wallpaper](https://www.uhdpaper.com/), [Wallpaperflare](https://www.wallpaperflare.com/), [pixiv](https://www.pixiv.net/en/).**<br>
 * **The concept was ~~stolen~~ inspired from [Freelancer](https://www.freelancer.com/), [upwork](https://www.upwork.com/).**<br>
-* **Please read the [REAME_Default.md](https://github.com/AxelXrest/flexihire.github.io/blob/main/README_Default.md) for more informations.**<br>
+* **Please read the [REAME_Default.md](./README_Default.md) for more informations.**<br>
 * **~~Planning to add some changes if I find more inspiration and motivation.~~**<br>
   **---**
 * #### Special thanks to:
